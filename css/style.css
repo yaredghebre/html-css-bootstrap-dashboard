@@ -21,6 +21,16 @@ img {
     max-width: 100%;
 }
 
+/* COMMON */
+/* Typograpy */
+.font-2r {
+    font-size: 2rem;
+}
+
+.font-3r {
+    font-size: 3rem;
+}
+
 /* WRAPPER */
 .web-app {
     height: 100vh;
@@ -84,15 +94,6 @@ main {
         height: var(--top_content-sm-height);
     }
 }
-
-.font-2r {
-    font-size: 2rem;
-}
-
-.font-3r {
-    font-size: 3rem;
-}
-
 
 .middle_content {
     /* debug */
