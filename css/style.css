@@ -2,8 +2,13 @@
 :root {
     /* Sizes */
     --header-height: 70px;
-    --sidebar-width: 150px;
+    --sidebar-lg-width: 150px;
+    --sidebar-sm-width: 60px;
     --top_content-height: 100px;
+
+    /* Colors */
+    --bg-sidebar: #092237;
+    --bg-top: #1b72e8;
 }
 
 /* RESET */
@@ -39,21 +44,31 @@ header {
 main {
     height: calc(100% - var(--header-height));
     width: 100%;
-    /* debug */
-    /* background-color: blue; */
 }
 
 /* Sidebar */
 .sidebar {
-    width: var(--sidebar-width);
+    width: var(--sidebar-lg-width);
     height: 100%;
-    /* debug */
-    background-color: brown;
+    background-color: var(--bg-sidebar);
+    background-image: url(../img/sidebar-bg.png);
 }
+
+.upper_sidebar,
+.lower_sidebar {
+    height: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 60px;
+    }
+}
+
 
 /* Content */
 .content {
-    width: calc(100% - var(--sidebar-width));
+    width: calc(100% - var(--sidebar-sm-width));
     /* debug */
     background-color: black;
     height: 100%;
