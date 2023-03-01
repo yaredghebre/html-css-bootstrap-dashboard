@@ -4,7 +4,8 @@
     --header-height: 70px;
     --sidebar-lg-width: 150px;
     --sidebar-sm-width: 60px;
-    --top_content-height: 100px;
+    --top_content-sm-height: 300px; 
+    --top_content-height: 150px;
 
     /* Colors */
     --bg-sidebar: #092237;
@@ -65,20 +66,33 @@ main {
     }
 }
 
-
 /* Content */
 .content {
     width: calc(100% - var(--sidebar-sm-width));
     /* debug */
-    background-color: black;
     height: 100%;
 }
 
 .top_content {
     height: var(--top_content-height);
     /* debug */
-    background-color: coral;
+    background-color: var(--bg-top);
 }
+
+@media screen and (max-width: 768px) {
+    .top_content {
+        height: var(--top_content-sm-height);
+    }
+}
+
+.font-2r {
+    font-size: 2rem;
+}
+
+.font-3r {
+    font-size: 3rem;
+}
+
 
 .middle_content {
     /* debug */
