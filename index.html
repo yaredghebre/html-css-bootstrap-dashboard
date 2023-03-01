@@ -19,28 +19,34 @@
 <body>
     <!-- WRAPPER -->
         <div class="web-app">
-            <!-- HEADER -->
-            <!-- <header class="container-fluid bg-body-tertiar">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="navbar-brand d-none d-lg-block" href="#">
-                        <a href=""><img src="img/logo.svg" alt="Header Logo"></a>
-                        <a href=""><img class="mobile_logo d-block d-lg-none d-xl-none d-xxl-none" src="img/mobile-logo.png" alt="Header Logo"></a>
-                    </div>
-                    
-                  </nav>
-            </header> -->
 
+            <!-- HEADER -->
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo.svg" alt="">
+                        <img class="d-none d-lg-block p-2" src="img/logo.svg" alt="">
+                        <img class="mobile_logo d-block d-lg-none d-xl-none d-xxl-none" src="img/mobile-logo.png" alt="">
                     </a>
-                    <a class="navbar-brand mobile_logo" href="#">
-                        <img src="img/mobile-logo.png" alt="">
-                    </a>
-                    
-                  
-                    
+
+                    <form class="form-inline flex-grow-1">
+                        
+                        <input class="form-control mr-sm-2 bg-light" type="search" placeholder=" Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    </form>
+
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item px-2">
+                            <a class="nav-link d-none d-lg-block" href="#"><i class="fa-solid fa-list-ul"></i></a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link d-none d-lg-block" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link d-none d-lg-block" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-bell text-warning"></i></a>
+                        </li>
+                    </ul>                    
                 </nav>
             </header>
             <!-- /HEADER -->
