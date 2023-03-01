@@ -1,0 +1,77 @@
+/* VARIABLES */
+:root {
+    /* Sizes */
+    --header-height: 60px;
+    --sidebar-width: 150px;
+    --top_content-height: 100px;
+}
+
+/* RESET */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* WRAPPER */
+.web-app {
+    height: 100vh;
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    height: var(--header-height);
+    /* debug */
+    /* width: 100%; */
+    background-color: aqua;
+}
+
+.navbar {
+    
+}
+
+.mobile_logo {
+    width: 50px;
+    height: 100%;
+    background-color: red;
+}
+
+/* MAIN */
+main {
+    height: calc(100% - var(--header-height));
+    width: 100%;
+    /* debug */
+    /* background-color: blue; */
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100%;
+    /* debug */
+    background-color: brown;
+}
+
+/* Content */
+.content {
+    width: calc(100% - var(--sidebar-width));
+    /* debug */
+    background-color: black;
+    height: 100%;
+}
+
+.top_content {
+    height: var(--top_content-height);
+    /* debug */
+    background-color: coral;
+}
+
+.middle_content {
+    /* debug */
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+}
