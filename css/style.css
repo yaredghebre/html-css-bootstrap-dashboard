@@ -22,15 +22,10 @@ img {
 }
 
 /* COMMON */
-/* Typograpy */
-.font-2r {
-    font-size: 2rem;
-}
 
-.font-3r {
-    font-size: 3rem;
+.ms_blue-pill {
+    background-color: #165bba;
 }
-
 /* WRAPPER */
 .web-app {
     height: 100vh;
@@ -84,14 +79,20 @@ main {
 }
 
 .top_content {
-    height: var(--top_content-height);
-    /* debug */
     background-color: var(--bg-top);
 }
 
 @media screen and (max-width: 768px) {
-    .top_content {
-        height: var(--top_content-sm-height);
+    .ms_order-1 {
+        order: 2;
+    }
+
+    .ms_order-2 {
+        order: 3;
+    }
+
+    .ms_order-3 {
+        order: 1;
     }
 }
 
