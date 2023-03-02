@@ -22,10 +22,19 @@ img {
 }
 
 /* COMMON */
+/* Utilities */
+.top-10 {
+    top: 10px;
+}
+
+.start-50px {
+    left: 50px;
+}
 
 .ms_blue-pill {
     background-color: #165bba;
 }
+
 /* WRAPPER */
 .web-app {
     height: 100vh;
@@ -75,9 +84,9 @@ main {
 .content {
     width: calc(100% - var(--sidebar-sm-width));
     /* debug */
-    height: 100%;
+    /* height: 100%; */
 }
-
+/* Top Content */
 .top_content {
     background-color: var(--bg-top);
 }
@@ -96,9 +105,14 @@ main {
     }
 }
 
+/* Middle Content */
 .middle_content {
-    /* debug */
-    background-color: beige;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* prossime classi */
+.avatar-logo {
+    height: 30px;
+    width: 30px;
 }
